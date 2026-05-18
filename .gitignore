@@ -1,0 +1,52 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Angular / Node ###
+product-app/node_modules/
+product-app/dist/
+product-app/.angular/
+product-app/coverage/
+
+# npm logs
+product-app/npm-debug.log*
+product-app/yarn-debug.log*
+product-app/yarn-error.log*
+
+# optional env files
+product-app/.env
+product-app/.env.*
+
+### OS ###
+.DS_Store
+Thumbs.db
