@@ -1,0 +1,93 @@
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  color: #003cff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* ====== WRAPPER CENTRUJĄCY ====== */
+.center-wrapper {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ====== FORMULARZ (GLASSMORPHISM) ====== */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 360px;
+  padding: 36px;
+
+  background: rgba(255,255,255,0.22);
+  backdrop-filter: blur(14px);
+
+  border-radius: 18px;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.28);
+}
+
+/* ====== INPUTY ====== */
+form input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+
+  border: 1px solid rgba(0,0,0,0.35);
+  border-radius: 10px;
+
+  background: rgba(255,255,255,0.85);
+  color: #111;
+  font-size: 16px;
+
+  transition: 0.2s;
+}
+
+form input:focus {
+  outline: none;
+  background: rgba(255,255,255,1);
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0,123,255,0.6);
+}
+
+/* ====== SELECT (dopasowany do inputów) ====== */
+form select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+
+  border: 1px solid rgba(0,0,0,0.35);
+  border-radius: 10px;
+
+  background: rgba(255,255,255,0.85);
+  color: #111;
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+form select:hover {
+  background: rgba(255,255,255,0.95);
+}
+
+form select:focus {
+  outline: none;
+  background: rgba(255,255,255,1);
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0,123,255,0.6);
+}
+
+form select option {
+  background: #fff;
+  color: #111;
+  padding: 10px;
+}
+

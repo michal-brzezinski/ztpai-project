@@ -1,0 +1,20 @@
+<h2>Edit Product</h2>
+
+<form [formGroup]="form" (ngSubmit)="save()">
+
+  <div>
+    <input formControlName="name" placeholder="Name">
+  </div>
+
+  <div>
+    <input formControlName="price" type="number" placeholder="Price">
+  </div>
+
+  <div>
+    <textarea formControlName="description" placeholder="Description"></textarea>
+  </div>
+
+  <button type="submit">Save</button>
+</form>
+
+<p><a routerLink="/">⬅ Back</a></p>

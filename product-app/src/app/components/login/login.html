@@ -1,0 +1,29 @@
+
+<div class="center-wrapper">
+
+  <h2>Login</h2>
+
+  <form [formGroup]="form" (ngSubmit)="login()">
+
+    <div>
+      <input formControlName="username" placeholder="Username">
+    </div>
+
+    <div>
+      <input formControlName="password" type="password" placeholder="Password">
+    </div>
+
+    <button type="submit">Login</button>
+
+  </form>
+
+  <div style="color:red; margin-top:8px;">
+    {{ error }}
+  </div>
+
+  <p style="margin-top:12px;">
+    Nie masz konta?
+    <a routerLink="/register">Zarejestruj się</a>
+  </p>
+
+</div>
