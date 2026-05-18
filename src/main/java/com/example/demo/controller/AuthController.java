@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.http.HttpStatus;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
@@ -35,7 +37,7 @@ public class AuthController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<String> register(@RequestBody RegisterRequest req) {
+    public ResponseEntity<Map<String, String>> register(@RequestBody RegisterRequest req) {
 
         if (userRepository.existsByUsername(req.getUsername())) {
             throw new ResponseStatusException(
@@ -59,7 +61,7 @@ public class AuthController {
 
         userRepository.save(user);
 
-        return ResponseEntity.ok("User registered");
+        return ResponseEntity.ok(Map.of("message", "User registered"));
     }
 
 
